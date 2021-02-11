@@ -114,7 +114,7 @@ console.log(multiplyArray(testArray))
 
 // Here is the test for multiplyArray(); uncomment it to run it
 
-testMultiplyArray(testArray);
+//testMultiplyArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
@@ -138,7 +138,13 @@ let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) {
   //eslint-disable-line
+  let prob6=1 ;
+  for(let i =0;i< dynamicArray.length ;i++){
+    prob6=multiply(prob6,dynamicArray[i])[0]
+  }
+  return[prob6,'The numbers ' + dynamicArray + ' have a product of ' + prob6+'.']
 }
+console.log(multiplyAnyArray(testDynamicArray));
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
